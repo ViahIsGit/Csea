@@ -3,84 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Padrões de Segurança Infantil - NOME_DO_APP</title>
+<title>Política de Padrões de Segurança Infantil - DK</title>
+
+<script type="module" src="https://unpkg.com/@material/web/all.js?module"></script>
+
 <style>
+:root {
+  --md-sys-color-primary: #8f7cff;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #e8e0ff;
+  --md-sys-color-on-primary-container: #1e1b4b;
+  --md-sys-color-background: #f6f5ff;
+  --md-sys-color-surface: #ffffff;
+  --md-sys-color-on-surface: #1c1b1f;
+  --md-sys-color-outline: #c5c4dd;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    margin: 0;
-    padding: 40px;
-    color: #333;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Roboto', system-ui, sans-serif;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-surface);
 }
+
 .container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
 }
-h1, h2 {
-    color: #c62828;
+
+.card {
+  background: var(--md-sys-color-surface);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin-top: 0;
+  color: var(--md-sys-color-primary);
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 32px;
+  color: var(--md-sys-color-primary);
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.topbar {
+  background: var(--md-sys-color-primary-container);
+  padding: 16px 24px;
+  font-weight: 600;
+  color: var(--md-sys-color-on-primary-container);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
 </head>
+
 <body>
 
+<div class="topbar">
+  Política de Segurança Infantil
+  <md-filled-button onclick="window.location.href='mailto:yokydksocial@gmail.com'">
+    Contato
+  </md-filled-button>
+</div>
+
 <div class="container">
+  <div class="card">
 
-<h1>Política de Padrões de Segurança Infantil</h1>
-<p><strong>Aplicável ao aplicativo DK</strong></p>
-<p><strong>Desenvolvedor:</strong> DKTeam</p>
+    <h1>Política de Padrões de Segurança Infantil</h1>
 
-<h2>1. Compromisso com a Segurança Infantil</h2>
-<p>
-O aplicativo <strong>DK</strong>, desenvolvido por <strong>DKTeam</strong>,
-adota política de tolerância zero contra abuso e exploração sexual infantil (CSAE).
-Nos comprometemos a manter um ambiente seguro e adequado para todos os usuários.
-</p>
+    <p><strong>Aplicável ao aplicativo DK</strong></p>
+    <p><strong>Desenvolvedor:</strong> DKTeam</p>
 
-<h2>2. Proibição de Conteúdo Relacionado a CSAE</h2>
-<p>
-É estritamente proibido qualquer conteúdo que envolva abuso ou exploração sexual infantil.
-Isso inclui, mas não se limita a:
-</p>
-<ul>
-<li>Conteúdo sexual envolvendo menores de idade;</li>
-<li>Qualquer forma de exploração sexual infantil;</li>
-<li>Compartilhamento, solicitação ou promoção de material ilegal relacionado a menores.</li>
-</ul>
+    <h2>1. Compromisso com a Segurança Infantil</h2>
+    <p>
+    O aplicativo DK adota política de tolerância zero contra abuso e exploração sexual infantil.
+    Mantemos medidas técnicas, administrativas e operacionais para prevenir, detectar e remover
+    qualquer conteúdo inadequado envolvendo menores.
+    </p>
 
-<h2>3. Denúncia e Remoção de Conteúdo</h2>
-<p>
-Qualquer conteúdo suspeito será imediatamente removido e poderá resultar em bloqueio
-ou exclusão permanente da conta do usuário.
-</p>
+    <h2>2. Proibição de Conteúdo Relacionado a Abuso Infantil</h2>
+    <p>É estritamente proibido:</p>
+    <ul>
+      <li>Conteúdo sexual envolvendo menores de idade;</li>
+      <li>Exploração, aliciamento ou assédio infantil;</li>
+      <li>Compartilhamento de material ilegal relacionado a menores;</li>
+      <li>Tentativas de contato impróprio com menores;</li>
+      <li>Qualquer forma de incentivo ou promoção de abuso infantil.</li>
+    </ul>
 
-<p>
-Se identificado conteúdo potencialmente ilegal, o desenvolvedor poderá cooperar
-com autoridades competentes conforme exigido por lei.
-</p>
+    <h2>3. Moderação e Monitoramento</h2>
+    <p>
+    O DK poderá utilizar sistemas automatizados e revisão manual para identificar conteúdos
+    potencialmente ilegais ou que violem esta política.
+    </p>
 
-<h2>4. Canal de Contato</h2>
-<p>
-Para denúncias ou dúvidas relacionadas à segurança infantil,
-entre em contato pelo e-mail:
-</p>
+    <h2>4. Denúncia Dentro do Aplicativo</h2>
+    <p>
+    Usuários podem denunciar conteúdos ou perfis suspeitos por meio das ferramentas
+    internas do aplicativo ou pelo e-mail oficial.
+    </p>
 
-<p><strong>yokydksocial@gmail.com</strong></p>
+    <h2>5. Medidas Disciplinares</h2>
+    <p>
+    Contas que violem esta política poderão ser suspensas ou permanentemente banidas.
+    Em casos graves, poderemos cooperar com autoridades competentes conforme exigido por lei.
+    </p>
 
-<h2>5. Conformidade com Google Play</h2>
-<p>
-Esta política está em conformidade com a Política de Padrões de Segurança Infantil
-do Google Play e demais legislações aplicáveis.
-</p>
+    <h2>6. Idade Mínima</h2>
+    <p>
+    O uso do aplicativo pode estar sujeito a idade mínima conforme legislação local.
+    Usuários que não atendam aos requisitos poderão ter suas contas removidas.
+    </p>
 
-<p>Última atualização: 2026</p>
+    <h2>7. Responsabilidade do Usuário</h2>
+    <p>
+    Os usuários são responsáveis pelo conteúdo que publicam e devem respeitar todas as
+    leis aplicáveis relacionadas à proteção infantil.
+    </p>
 
+    <h2>8. Atualizações desta Política</h2>
+    <p>
+    Esta política poderá ser atualizada periodicamente para refletir mudanças legais
+    ou melhorias de segurança.
+    </p>
+
+    <h2>9. Conformidade Legal</h2>
+    <p>
+    Esta política está em conformidade com as diretrizes da Google Play,
+    legislações nacionais e internacionais aplicáveis à proteção infantil.
+    </p>
+
+    <h2>10. Canal Oficial de Contato</h2>
+    <md-outlined-button onclick="window.location.href='mailto:yokydksocial@gmail.com'">
+      yokydksocial@gmail.com
+    </md-outlined-button>
+
+    <div class="footer">
+      Última atualização: 2026
+    </div>
+
+  </div>
 </div>
 
 </body>
 </html>
-
